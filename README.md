@@ -1,4 +1,4 @@
-# 30 Days of Frontend
+# 30 Days of Frontend Davelopment
 
 I challenge myself to learn and build a new frontend project every day for 30 days. This repository contains all the projects I create during this challenge.
 
