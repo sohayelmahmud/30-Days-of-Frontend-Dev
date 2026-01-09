@@ -1,0 +1,124 @@
+:root {
+    /* Colors */
+
+    /* Clean Website */
+    --nav-bg1: #FFFFFF;
+    --bg1: #F3F4F6;
+    --text1: #111827;
+    --link-text1: #374151;
+    --hover1: #E5E7EB;
+    --active1: #2563EB;
+
+    --shadow1: rgba(0, 0, 0, 0.08);
+
+    /* Dark tech */
+    --nav-bg2: #020617;
+    --bg2: #020617;
+    --text2: #F8FAFC;
+    --link-text2: #94A3B8;
+    --hover2: #1E293B;
+    --active2: #38BDF8;
+
+    --shadow2: rgba(0, 0, 0, 0.5);
+
+    /* soft modern */
+    --nav-bg3: #ECFEFF;
+    --bg3: #ECFEFF;
+    --text3: #0F172A;
+    --link-text3: #475569;
+    --hover3: #CCFBF1;
+    --active3: #14B8A6;
+
+    --shadow3: rgba(15, 23, 42, 0.1);
+
+
+    /* font size */
+    --fs-20: 20px;
+    --fs-14: 14px;
+
+    /* font weight */
+    --fw7: 700;
+    --fw6: 600;
+    --fw5: 500;
+    --fw4: 400;
+}
+
+/* Desktop view */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--bg1);
+}
+
+nav {
+    display: flex;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 100%;
+    align-items: center;
+    color: var(--nav-bg1);
+    box-shadow: 0px 10px 20px var(--shadow1);
+}
+
+.logo {
+    font-family: 'Alex Brush', cursive;
+    font-size: var(--fs-20);
+    font-weight: var(--fw7);
+    letter-spacing: 1.5px;
+    color: var(--text1);
+    text-transform: uppercase;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+}
+
+.nav-item {
+    position: relative;
+    color: var(--link-text1);
+    padding: 8px 0px;
+}
+
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--active1);
+    transition: 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item i {
+    display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+
+
+}
